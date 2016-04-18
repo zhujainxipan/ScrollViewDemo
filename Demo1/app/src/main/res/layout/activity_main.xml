@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#555"
+        >
+
+        <TextView
+            android:id="@+id/action_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textSize="36sp"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/action_bar_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/ptt_back"
+            />
+
+        <ImageView
+            android:id="@+id/action_bar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/ptt_share_hospital"
+            />
+
+    </RelativeLayout>
+
+    <com.example.niehongtao.demo1.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sv_myscrollview"
+        android:background="#fff"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:textColor="#000"
+                android:text="心脏病科"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom|center_horizontal"
+                android:id="@+id/tv_title"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="心脏病科\n\n\n\n心脏病科\n\n\n\n心脏病科\n\n\n\n心脏病科\n\n\n\n心脏病科\n\n\n\n心脏病科\n\n\n\n心脏病科\n\n\n\n心脏病科\n\n\n\n心脏病科\n\n\n\n心脏病科\n\n\n\n心脏病科\n\n\n\n心脏病科\n\n\n\n心脏病科"
+                android:paddingTop="30dp"
+                />
+
+        </LinearLayout>
+
+    </com.example.niehongtao.demo1.MyScrollView>
+
+
+</LinearLayout>
